@@ -1,0 +1,52 @@
+/* fonts from https://www.fontsquirrel.com */
+@font-face {
+  font-family: "text-font";
+  src: url("/fonts/text.otf");
+}
+
+@font-face {
+  font-family: "code-font";
+  src: url("/fonts/code.otf");
+}
+
+
+/* root */
+:root {
+  --md-text-font: "text-font"; 
+  --md-code-font: "code-font"; 
+  
+  /* vars */
+  --my-link: #F44336;
+}
+
+/* links */
+.md-nav {
+  --md-typeset-a-color: var(--md-accent-fg-color);
+}
+.md-content {
+  --md-typeset-a-color: var(--my-link);
+}
+
+/* header */
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/*.md-header__button */
+.md-logo {
+  animation: blinker 1s linear infinite;
+}
+
+/* spam */
+span.blockspam {
+  display: none;
+}
+
+
+/* timelines */
+.timeline .nt-timeline-dot .icon {
+    color: white;
+    background: black;
+}
