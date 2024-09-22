@@ -3,17 +3,40 @@ name: deploy
 on:
   push:
     tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - "v[0-9]+.[0-9]+.[0-9]+"
 
-env:
-  CARGO_TERM_COLOR: always
+# sets permissions of the github_token to allow deployment to github pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# however, do not cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  build:
-
+  # single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
-    - name: install
-      run: cargo install --git https://github.com/astral-sh/rye rye && rye self install
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: setup pages
+        uses: actions/configure-pages@v5
+
+      - name: upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # upload entire repository
+          path: "."
+
+      - name: deploy to github pages
+        id: deployment
+        uses: actions/deploy
