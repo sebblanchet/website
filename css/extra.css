@@ -9,6 +9,10 @@
   src: url("/fonts/code.otf");
 }
 
+@font-face {
+  font-family: "Fira Mono";
+  src: url("/fonts/code.otf");
+}
 
 /* root */
 :root {
@@ -45,8 +49,9 @@ span.blockspam {
 }
 
 
-/* timelines */
+/* timelines 
 .timeline .nt-timeline-dot .icon {
     color: white;
-    background: black;
+    background: white;
 }
+*/

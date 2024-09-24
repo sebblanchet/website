@@ -2,42 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sebblanchet.com/</loc>
-         <lastmod>2024-09-22</lastmod>
+         <lastmod>2024-09-24</lastmod>
     </url>
     <url>
          <loc>https://sebblanchet.com/contact/</loc>
-         <lastmod>2024-09-22</lastmod>
+         <lastmod>2024-09-24</lastmod>
     </url>
     <url>
          <loc>https://sebblanchet.com/glossary/</loc>
-         <lastmod>2024-09-22</lastmod>
+         <lastmod>2024-09-24</lastmod>
     </url>
     <url>
          <loc>https://sebblanchet.com/privacy/</loc>
-         <lastmod>2024-09-22</lastmod>
+         <lastmod>2024-09-24</lastmod>
     </url>
     <url>
          <loc>https://sebblanchet.com/resume/</loc>
-         <lastmod>2024-09-22</lastmod>
+         <lastmod>2024-09-24</lastmod>
     </url>
     <url>
          <loc>https://sebblanchet.com/blog/</loc>
-         <lastmod>2024-09-22</lastmod>
+         <lastmod>2024-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sebblanchet.com/blog/2024/09/08/first/</loc>
-         <lastmod>2024-09-22</lastmod>
+         <loc>https://sebblanchet.com/blog/2024/09/23/first/</loc>
+         <lastmod>2024-09-24</lastmod>
     </url>
     <url>
          <loc>https://sebblanchet.com/blog/archive/2024/</loc>
-         <lastmod>2024-09-22</lastmod>
-    </url>
-    <url>
-         <loc>https://sebblanchet.com/blog/category/mkdocs/</loc>
-         <lastmod>2024-09-22</lastmod>
+         <lastmod>2024-09-24</lastmod>
     </url>
     <url>
          <loc>https://sebblanchet.com/tags/</loc>
-         <lastmod>2024-09-22</lastmod>
+         <lastmod>2024-09-24</lastmod>
     </url>
 </urlset>
