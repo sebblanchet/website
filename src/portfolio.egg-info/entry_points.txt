@@ -1,0 +1,3 @@
+[console_scripts]
+bump = website:bump.cli
+website = website:main

@@ -1,0 +1,66 @@
+Metadata-Version: 2.4
+Name: portfolio
+Version: 0.3.1
+Summary: personal portfolio
+Author-email: seb blanchet <s3blanch@uwaterloo.ca>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mkdocs>=1.6.1
+Requires-Dist: mkdocs-simple-blog>=0.0.9
+Requires-Dist: mkdocs-macros-plugin>=1.0.5
+Requires-Dist: mkdocs-git-revision-date-plugin>=0.3.2
+Requires-Dist: mkdocs-material[imaging]>=9.5.36
+Requires-Dist: pydantic>=2.9.0
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: neoteroi-mkdocs>=1.1.0
+Requires-Dist: termynal>=0.12.1
+Requires-Dist: mkdocs-minify-plugin>=0.8.0
+Requires-Dist: toml>=0.10.2
+Requires-Dist: click>=8.1.7
+Dynamic: license-file
+
+# Website
+
+> Seb Blanchet
+
+Personal portfolio/blog live at [sebblanchet.com](https://sebblanchet.com).
+
+## Install
+
+Dependencies:
+
+* `uv`
+
+## Developping
+
+### Locally
+
+```bash
+uv sync
+mkdocs serve
+mkdocs build
+```
+
+### Docker
+
+```bash
+./bin/docker.sh --deploy
+```
+
+## Tools
+
+Use cli:
+
+```bash
+source .venv/bin/activate
+website --help
+```
+
+## Deploying
+
+Hosted with Github pages:
+
+```bash
+mkdocs gh-deploy
+```
